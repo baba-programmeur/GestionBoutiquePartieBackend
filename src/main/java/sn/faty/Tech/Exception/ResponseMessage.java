@@ -1,2 +1,13 @@
-package sn.faty.Tech.Exception;public class ResponseMessage {
+package sn.faty.Tech.Exception;
+
+
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
+
+public class ResponseMessage extends Exception {
+
+    public  ResponseMessage(String erreur)
+    {
+        super(erreur);
+    }
 }
